@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Clone private repo
-      run: git clone "https://gitlab.com/ShwetaKhai/jenkins-app-deployment-firebase.git"
+      run: git clone "https://gitlab.com/ShwetaKhai/jenkins-app-deployment-firebase.git" Dev
       env:
         EXTERNAL_TOKEN : ${{ secrets.GITLAB_TOKEN }}
     
