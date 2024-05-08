@@ -15,5 +15,7 @@ jobs:
       with:
         repository: ShwetaKhai/Jenkins-App-Deployment-Firebase
         token: ${{ secrets.GITLAB_TOKEN }}
+      env:
+        ACTIONS_STEP_DEBUG: true
 
     # Add your other steps for the build process here..
