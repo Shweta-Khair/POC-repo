@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clone private repo
-      run: git clone "https://gitlab.com/ShwetaKhai/jenkins-app-deployment-firebase.git" Dev
+    - name: Checkout GitLab Repository
+      uses: actions/checkout@v4
+      with:
+        repository: ShwetaKhai/Jenkins-App-Deployment-Firebase
+        token: ${{ secrets.GITLAB_TOKEN }}
       env:
-        EXTERNAL_TOKEN : ${{ secrets.GITLAB_TOKEN }}
+        ACTIONS_STEP_DEBUG: true
     
     # Add your other steps for the build process here.
