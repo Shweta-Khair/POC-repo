@@ -16,4 +16,4 @@ jobs:
         repository: https://gitlab.com/ShwetaKhai/jenkins-app-deployment-firebase.git
         token: ${{ secrets.GITLAB_TOKEN }}
 
-    # Add your other steps for the build process here
+    # Add your other steps for the build process here.
