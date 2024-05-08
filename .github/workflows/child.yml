@@ -1,0 +1,15 @@
+name: VANSH2552 Child Workflow
+
+on:
+  repository_dispatch:
+    types: [run-child-workflow]
+
+jobs:
+  child_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Child Workflow Step
+        run: |
+          echo "Child workflow is running"
+          # VANSH2552 child workflow 
